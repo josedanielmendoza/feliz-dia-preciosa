@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 }
 
 #main-title {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #fff;
   text-shadow: 2px 2px #f00;
   margin-bottom: 1rem;
@@ -24,7 +24,7 @@ body {
 
 .photos {
   display: flex;
-  flex-direction: row; /* imágenes en fila */
+  flex-direction: row;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
@@ -41,12 +41,51 @@ body {
   object-fit: contain;
 }
 
-.lyrics {
+.heart-text {
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.heart {
+  top: 50px;
+  position: relative;
+  font-size: 18rem;
+  user-select: none;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 180px;
+  line-height: 1.2;
+}
+
+.heart-inside-text {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  user-select: text;
+}
+
+.lyrics {
+  margin-top: 130px;
   color: white;
   font-size: 1.2rem;
   text-shadow: 1px 1px #000;
   min-height: 6rem;
+  padding: 0 1rem;
 }
 
 audio {
@@ -58,7 +97,7 @@ audio {
 /* Flotantes */
 .floating {
   position: absolute;
-  bottom: -50px; /* Aparecen desde abajo */
+  bottom: -50px;
   font-size: 25px;
   pointer-events: none;
   animation: float 10s linear forwards;
@@ -82,16 +121,28 @@ audio {
 /* Responsive */
 @media (max-width: 600px) {
   .photos {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .photos img {
-    max-width: 90%;
+    max-width: 45%;
   }
 
   #main-title {
     font-size: 1.6rem;
+  }
+
+  .heart {
+    font-size: 4.5rem;
+    width: 150px;
+    height: 130px;
+  }
+
+  .heart-inside-text {
+    width: 110px;
+    height: 110px;
+    font-size: 0.9rem;
   }
 
   .lyrics {
