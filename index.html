@@ -3,28 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Feliz dia BB</title>
+  <title>Feliz Año y Medio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="img.png" type="image/x-icon">
 </head>
 <body>
-  <audio id="bg-music">
-    <source src="Nothin' On You (feat. Bruno Mars).mpeg" type="audio/mpeg" />
-    Tu navegador no soporta audio HTML5.
-  </audio>
+  <div class="container">
+    <h1 id="main-title"></h1>
 
-  <main class="container">
-    <h1 class="typewriter" id="main-text"></h1>
-
-    <div class="image-row">
-      <img src="foto1.jpg" alt="Rosa" class="decor-image" />
-      <img src="foto2.jpg" alt="Pareja" class="decor-image" />
+    <div class="photos">
+      <img src="foto1.jpg" alt="Foto 1" />
+      <img src="foto2.jpg" alt="Foto 2" />
     </div>
 
-    <p class="lyrics" id="lyrics-text"></p>
+    <div class="lyrics" id="lyrics"></div>
 
-    <div id="floating-elements"></div>
-  </main>
+  <audio id="audio" autoplay muted>
+    <source src="musica.mpeg" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
