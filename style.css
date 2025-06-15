@@ -139,7 +139,7 @@ audio {
   }
 
  .heart-img img {
-    max-width: 400px; /* Mantén este tamaño grande */
+    max-width: 470px; /* Mantén este tamaño grande */
     width: 100%; /* Para que sea responsivo pero no más pequeño */
   }
 
