@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  background: linear-gradient(to bottom, #ffdde1, #fa92c3);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ body {
 }
 
 #main-title {
-  font-size: 5rem;
+  font-size: 6rem;
   color: #fff;
   text-shadow: 2px 2px #f00;
   margin-bottom: 1rem;
