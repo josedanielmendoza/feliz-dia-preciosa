@@ -135,7 +135,7 @@ audio {
   }
 
   #main-title {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
  .heart-img img {
@@ -144,7 +144,7 @@ audio {
   }
 
   .heart-inside-text {
-    font-size: 1rem; /* Puedes ajustar aquí si quieres texto más pequeño */
+    font-size: 0.85rem; /* Puedes ajustar aquí si quieres texto más pequeño */
     max-width: 80%; /* Para que el texto no se salga del corazón */
   }
 
