@@ -1,4 +1,4 @@
-// Título animado
+// Animar título
 const titulo = "Feliz Año y Medio ❤️";
 let indice = 0;
 const tituloElemento = document.getElementById("main-title");
@@ -12,12 +12,12 @@ function escribirTitulo() {
 }
 escribirTitulo();
 
-// Letra de la canción en español
+// Letra de la canción en español sincronizada
 const lineas = [
-  "Chicas hermosas en por el mundo",
-  "Podría ir detras de ellas, pero sería una pérdida de tiempo",
-  "Porque ellas no tienen nada ti, cariño",
-  "Nada de ti, cariño"
+  "Chicas hermosas en todo el mundo",
+  "Podría estar persiguiéndolas, pero sería una pérdida de tiempo",
+  "Porque no tienen nada sobre ti, nena",
+  "Nada sobre ti, nena"
 ];
 
 const letras = document.getElementById("lyrics");
@@ -39,17 +39,7 @@ audio.addEventListener("timeupdate", () => {
     letras.innerHTML += `<p>${lineas[3]}</p>`;
 });
 
-// Permite reproducir con sonido tras el primer clic
-document.body.addEventListener('click', () => {
-  if (audio.muted) {
-    audio.muted = false;
-    audio.play().catch(e => {
-      console.log("Error al reproducir:", e);
-    });
-  }
-});
-
-// Emojis flotantes (rosas y corazones desde abajo)
+// Emojis flotantes desde abajo
 const emojis = ['❤️', '🌹', '💖', '💕'];
 function crearEmoji() {
   const emoji = document.createElement('div');
@@ -61,7 +51,12 @@ function crearEmoji() {
 }
 setInterval(crearEmoji, 300);
 
-// Si el navegador bloquea autoplay, quitar mute tras interacción
+// Permite activar sonido tras interacción (click/tap)
 document.body.addEventListener('click', () => {
-  audio.muted = false;
+  if (audio.muted) {
+    audio.muted = false;
+    audio.play().catch(e => {
+      console.log("Error al reproducir:", e);
+    });
+  }
 });
