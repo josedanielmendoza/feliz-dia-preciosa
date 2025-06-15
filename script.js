@@ -15,9 +15,9 @@ escribirTitulo();
 // Letra de la canción en español sincronizada
 const lineas = [
   "Chicas hermosas en todo el mundo",
-  "Podría estar persiguiéndolas, pero sería una pérdida de tiempo",
-  "Porque no tienen nada sobre ti, nena",
-  "Nada sobre ti, nena"
+  "Podría ir tras ellas, pero sería una pérdida de tiempo",
+  "Porque elllas no tienen nada de ti, cariño",
+  "Nada de ti, cariño"
 ];
 
 const letras = document.getElementById("lyrics");
